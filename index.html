@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dimas Arga Sadewa - Web & AI Creator</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <style>
+    body {
+  background-color: #0a0f1a;
+  color: #e0f2fe;
+  background-image: linear-gradient(rgba(10, 15, 26, 0.8), rgba(10, 15, 26, 0.8)), url('background.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      transition: background 0.5s ease, color 0.5s ease;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    .glass {
+      background: rgba(30, 41, 59, 0.7);
+      backdrop-filter: blur(10px);
+      border-radius: 1rem;
+      box-shadow: 0 4px 30px rgba(0,0,0,0.3);
+      animation: fadeInUp 1s ease-in-out;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body class="min-h-screen relative" id="particles-bg">
+
+<nav class="bg-gray-900 bg-opacity-80 text-white px-6 py-3 fixed top-0 w-full z-50 shadow-lg">
+  <div class="max-w-6xl mx-auto flex justify-between items-center">
+    <h1 class="text-xl font-bold">My Portofolio</h1>
+    <div class="space-x-4 text-sm">
+      <a href="#profil" class="hover:text-blue-400">Profil</a>
+      <a href="#keahlian" class="hover:text-blue-400">Keahlian</a>
+      <a href="#galeri" class="hover:text-blue-400">Karir & Pengalaman</a>
+      <a href="#kontak" class="hover:text-blue-400">Kontak</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section with image -->
+<header class="relative text-center pt-36 pb-24 text-white overflow-hidden">
+  
+  <div class="relative z-10 animate-fadeInUp">
+    <h1 class="text-5xl font-extrabold tracking-tight drop-shadow-lg">Dimas Arga Sadewa</h1>
+    <p class="mt-4 text-xl text-blue-300">Web Developer • AI Enthusiast • Multimedia Creator</p>
+    <div class="mt-6 flex justify-center gap-4">
+      <a href="#profil" class="px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-full font-semibold transition transform hover:scale-105">Lihat Profil</a>
+      <a href="#keahlian" class="px-6 py-2 border border-blue-400 text-blue-400 hover:bg-blue-600 hover:text-white rounded-full transition transform hover:scale-105">Skills</a>
+    </div>
+  </div>
+</header>
+
+<!-- Section: Profil -->
+<section id="profil" class="glass p-6 my-12 animate-fadeInUp rounded-2xl border border-cyan-500 shadow-xl max-w-5xl mx-auto">
+  <h2 class="text-2xl font-extrabold text-cyan-400 mb-6">Profil Singkat</h2>
+  <div class="flex flex-col md:flex-row items-center gap-6">
+    <img src="profil.jpg" alt="Foto Profil Dimas Arga" class="w-40 h-40 object-cover rounded-full shadow-lg">
+    <p class="text-white leading-relaxed text-justify">Saya adalah individu yang memiliki minat dan semangat tinggi dalam pengembangan teknologi informasi, dengan latar belakang akademik di bidang Teknik Informatika serta pengalaman dalam pengembangan web, multimedia, dan layanan digital. Saya memiliki komitmen untuk terus belajar dan beradaptasi dengan perkembangan teknologi terbaru. Saya juga sangat bersemangat untuk memberikan kontribusi nyata dalam mendukung transformasi digital dan kemajuan perusahaan Bapak/Ibu pimpin melalui pemanfaatan teknologi secara optimal.</p>
+  </div>
+</section>
+
+<!-- Section: Keahlian dengan gambar -->
+<section id="keahlian" class="glass p-6 my-12 animate-fadeInUp rounded-2xl border border-cyan-500 shadow-xl max-w-5xl mx-auto">
+  <p class="text-white text-sm mb-6">Keahlian teknis saya mencerminkan pengalaman dan dedikasi saya dalam membangun solusi digital yang modern, estetis, dan responsif. Berikut beberapa bidang utama yang saya kuasai:</p>
+  <h2 class="text-2xl font-extrabold text-cyan-400 mb-6">Keahlian Teknis</h2>
+<p class="text-white text-sm mb-6">Setiap bidang keahlian ini telah saya asah melalui pengalaman nyata dan pembelajaran yang berkelanjutan. Saya percaya bahwa kolaborasi teknologi dan kreativitas adalah kunci dalam menciptakan solusi digital yang bermanfaat dan berdampak positif bagi organisasi.</p>
+  <div class="grid md:grid-cols-3 gap-6">
+    <div class="flex flex-col items-center text-center">
+      <img src="develop.jpg" alt="Web Development" class="rounded-xl shadow-lg w-full h-40 object-cover hover:scale-105 transition duration-300 border-2 border-cyan-400 cursor-pointer" onclick="showModal(this.src)">
+      <h3 class="text-cyan-300 font-semibold mt-4">Web Development</h3>
+      <p class="text-sm text-white">HTML, CSS, JavaScript, PHP, MySQL</p><p class='text-xs text-gray-300 mt-2'>Saya telah mengembangkan berbagai proyek berbasis web yang mencakup sistem informasi, portofolio, dan platform layanan digital, menunjukkan pemahaman saya terhadap logika backend dan desain antarmuka yang responsif.</p>
+    </div>
+    <div class="flex flex-col items-center text-center">
+      <img src="design.jpg" alt="Web Design" class="rounded-xl shadow-lg w-full h-40 object-cover hover:scale-105 transition duration-300 border-2 border-cyan-400 cursor-pointer" onclick="showModal(this.src)">
+      <h3 class="text-cyan-300 font-semibold mt-4">Web Design</h3>
+      <p class="text-sm text-white">UI/UX, Tailwind, Canva, Figma</p><p class='text-xs text-gray-300 mt-2'>Saya mengutamakan pengalaman pengguna yang baik dalam desain web. Pengalaman saya dalam menggunakan alat desain modern memungkinkan saya merancang tampilan yang estetis dan fungsional.</p>
+    </div>
+    <div class="flex flex-col items-center text-center">
+      <img src="multimedia.jpg" alt="Multimedia" class="rounded-xl shadow-lg w-full h-40 object-cover hover:scale-105 transition duration-300 border-2 border-cyan-400 cursor-pointer" onclick="showModal(this.src)">
+      <h3 class="text-cyan-300 font-semibold mt-4">Multimedia</h3>
+      <p class="text-sm text-white">CapCut, Premiere, Lightroom</p><p class='text-xs text-gray-300 mt-2'>Dalam dunia multimedia, saya terbiasa menyusun video dan visual digital yang mendukung kebutuhan promosi, dokumentasi, dan edukasi dengan pendekatan visual yang komunikatif.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Section: Galeri Proyek -->
+<section id="galeri" class="glass p-6 my-12 animate-fadeInUp rounded-2xl border border-cyan-500 shadow-xl max-w-5xl mx-auto">
+  <p class="text-white text-sm mb-6">Berikut adalah beberapa proyek yang telah saya kerjakan, mencerminkan kemampuan saya dalam pengembangan web, produksi multimedia, serta keterampilan komunikasi digital yang mendukung transformasi teknologi di berbagai bidang.</p>
+  <h2 class="text-2xl font-extrabold text-cyan-400 mb-6" id="karir">Karir & Pengalaman</h2>
+  <p class="text-white text-sm mb-6">Berbagai pengalaman ini membentuk karakter kerja saya yang adaptif, kreatif, dan mampu mengelola tantangan dalam dunia digital. Setiap proyek memberi saya kesempatan untuk berkontribusi secara nyata dan meningkatkan kemampuan lintas disiplin.</p>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div class="overflow-hidden rounded-lg shadow-lg group">
+      <img src="bus.jpg" alt="Agen Bisnis Bus" class="w-full h-56 object-cover transition duration-500 group-hover:scale-105 cursor-pointer border-2 border-cyan-400 rounded-lg" onclick="showModal(this.src)">
+      <div class="p-4 text-white">
+        <h3 class="text-cyan-300 font-semibold">Agen Bisnis Bus</h3>
+        <p class="text-sm">Penjualan tiket dan layanan pelanggan berbasis digital & langsung.</p>
+        <p class='text-xs text-gray-300 mt-2'>Pengalaman ini mengasah kemampuan saya dalam komunikasi, penanganan pelanggan, dan promosi layanan berbasis sistem informasi.</p>
+      </div>
+    </div>
+    <div class="overflow-hidden rounded-lg shadow-lg group">
+      <img src="videografer.jpg" alt="Proyek Film Pendek" class="w-full h-56 object-cover transition duration-500 group-hover:scale-105 cursor-pointer border-2 border-cyan-400 rounded-lg" onclick="showModal(this.src)">
+      <div class="p-4 text-white">
+        <h3 class="text-cyan-300 font-semibold">Proyek Film Pendek</h3>
+        <p class="text-sm">Videografi sinematik dalam pembuatan film pendek bertema sosial dan kampus.</p>
+        <p class="text-sm text-blue-300 mt-2">🎥 <a href="https://www.youtube.com/watch?v=9wSz8lOWZxY" target="_blank" class="underline hover:text-blue-400">Tonton Proyek Film di YouTube</a></p>
+      </div>
+    </div>
+    <div class="overflow-hidden rounded-lg shadow-lg group">
+      <img src="portfolio.jpg" alt="Website Portofolio" class="w-full h-56 object-cover transition duration-500 group-hover:scale-105 cursor-pointer border-2 border-cyan-400 rounded-lg" onclick="showModal(this.src)">
+      <div class="p-4 text-white">
+        <h3 class="text-cyan-300 font-semibold">Pengembangan Website Portofolio</h3>
+        <p class='text-xs text-gray-300 mt-2'>Website ini saya rancang untuk menampilkan hasil karya, pengalaman, dan keahlian saya secara interaktif dan responsif. Portofolio ini menjadi media profesional saya dalam memperkenalkan diri secara digital kepada calon rekan kerja atau perusahaan.</p>
+      </div>
+    </div>
+    <div class="overflow-hidden rounded-lg shadow-lg group">
+      <img src="desa.jpg" alt="Sistem Informasi Desa" class="w-full h-56 object-cover transition duration-500 group-hover:scale-105 cursor-pointer border-2 border-cyan-400 rounded-lg" onclick="showModal(this.src)">
+      <div class="p-4 text-white">
+        <h3 class="text-cyan-300 font-semibold">Sistem Informasi Desa</h3>
+        <p class="text-sm">Website dinamis berbasis PHP & MySQL untuk pengelolaan surat dan berita desa.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Konten lengkap: Navbar, Hero, Sections, Footer (dari kode sebelumnya) -->
+<!-- Tempelkan seluruh konten dari index Anda di sini sebelum chatbot -->
+
+<!-- Chatbot & AOS -->
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, once: true });
+</script>
+
+
+<!-- Chatbot Floating Widget -->
+<!-- Kontak Section -->
+<section id="kontak" class="glass p-6 my-12 animate-fadeInUp rounded-2xl border border-cyan-500 shadow-xl max-w-3xl mx-auto text-center">
+  <h2 class="text-2xl font-extrabold text-cyan-400 mb-4">Hubungi Saya</h2>
+  <p class="text-white mb-4">Jika Anda tertarik untuk berdiskusi lebih lanjut atau ingin bekerja sama, silakan hubungi saya melalui salah satu tautan di bawah ini.</p>
+  <div class="flex flex-col gap-4 items-center justify-center">
+    <a href="mailto:argasadewa@gmail.com" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">📧 Email: argasadewa@gmail.com</a>
+    <a href="https://wa.me/6285746923398" target="_blank" class="bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700 transition">💬 WhatsApp: 0857-4692-3398</a>
+    <a href="cv resume.pdf" download class="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-blue-600 hover:to-cyan-500 text-white font-semibold py-3 px-6 rounded-full shadow-lg transition transform hover:scale-105">📄 Unduh CV Lengkap</a>
+  </div>
+</section>
+
+<script>
+  function toggleChat() {
+    const box = document.getElementById("chatbot");
+    box.classList.toggle("hidden");
+  }
+
+  document.getElementById("chat-form").addEventListener("submit", async function(e) {
+    e.preventDefault();
+    const input = document.getElementById("user-input");
+    const windowChat = document.getElementById("chat-window");
+    const message = input.value.trim();
+    if (message !== "") {
+      const userMsg = `<div><strong>Anda:</strong> ${message}</div>`;
+      windowChat.innerHTML += userMsg;
+      input.value = "";
+      windowChat.scrollTop = windowChat.scrollHeight;
+
+      const botReply = await getBotReply(message);
+      windowChat.innerHTML += `<div><strong>Bot:</strong> ${botReply}</div>`;
+      windowChat.scrollTop = windowChat.scrollHeight;
+    }
+  });
+
+  async function getBotReply(userMessage) {
+    const lower = userMessage.toLowerCase();
+    if (lower.includes("cv") || lower.includes("resume")) return "Silakan unduh CV saya melalui tombol 'Unduh CV Lengkap'.";
+    if (lower.includes("kontak") || lower.includes("hubungi")) return "Kamu bisa menghubungi saya lewat WhatsApp, Email, atau Instagram yang tercantum di bagian kontak.";
+    if (lower.includes("keahlian") || lower.includes("skill")) return "Saya memiliki keahlian di bidang Web Development, Multimedia Editing, dan UI/UX Design.";
+    if (lower.includes("kuliah") || lower.includes("pendidikan")) return "Saya saat ini sedang menempuh studi di Universitas Sains Al-Qur’an, jurusan Teknik Informatika.";
+    if (lower.includes("pengalaman kerja")) return "Saya memiliki pengalaman sebagai staf penjualan agen bus, videografer film pendek, dan pengembang website desa serta portofolio.";
+    if (lower.includes("alasan melamar") || lower.includes("kenapa tertarik")) return "Saya melamar karena memiliki minat kuat di bidang teknologi dan ingin menerapkan keahlian saya dalam lingkungan profesional yang mendorong inovasi.";
+    if (lower.includes("kontribusi") || lower.includes("apa yang bisa diberikan")) return "Saya dapat memberikan kontribusi dalam bentuk solusi digital kreatif, pengembangan sistem web, dan visual multimedia yang mendukung branding atau layanan.";
+    return "Pertanyaan yang bagus! Namun untuk saat ini, saya hanya bisa menjawab hal-hal seputar portofolio Dimas Arga 😊";
+  }
+</script>
+
+<!-- Modal Viewer -->
+<div id="imageModal" class="fixed inset-0 bg-black bg-opacity-70 backdrop-blur-sm flex items-center justify-center z-50 hidden transition-opacity duration-500 ease-in-out" onclick="closeModal()">
+  <div class="relative max-w-3xl flex justify-center items-center" onclick="event.stopPropagation()">
+    
+    <img id="modalImage" src="" class="max-h-screen rounded-lg shadow-2xl" alt="Preview">
+    
+  </div>
+</div>
+
+<script>
+  function showModal(src) {
+    document.getElementById('modalImage').src = src;
+    document.getElementById('imageModal').classList.remove('hidden');
+  }
+
+  function closeModal() {
+    document.getElementById('imageModal').classList.add('hidden');
+  }
+</script>
+
+<!-- Animated Background Particles -->
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+<script>
+tsParticles.load("particles-bg", {
+  fullScreen: { enable: true, zIndex: -1 },
+  background: { color: { value: "transparent" } },
+  particles: {
+    number: { value: 50 },
+    color: { value: ["#00ffff", "#00e0ff", "#00bfff"] },
+    shape: { type: "image", image: { src: "https://cdn-icons-png.flaticon.com/512/1055/1055646.png", width: 32, height: 32 } },
+    opacity: { value: 0.3 },
+    size: { value: { min: 1, max: 3 } },
+    move: { enable: true, speed: 1, outModes: { default: "bounce" } }
+  },
+  interactivity: {
+    events: {
+      onHover: { enable: true, mode: "repulse" },
+      onClick: { enable: true, mode: "push" }
+    },
+    modes: {
+      repulse: { distance: 100 },
+      push: { quantity: 4 }
+    }
+  },
+  detectRetina: true
+});
+</script>
+</body>
+</html>
